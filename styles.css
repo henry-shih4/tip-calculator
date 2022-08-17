@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    height:100vh;
+    background-color:#BFCC94;
+    font-family:verdana;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.container{
+background-color: white;
+min-width:50%;
+padding:1em;
+text-align:center;
+border-radius:24px;
+}
+
+.header{
+    font-size:2rem;
+    margin-bottom:1em;
+}
+.amount{
+    display:flex;
+    margin-bottom:12px;
+    justify-content: center;
+    margin-bottom:1.5em;
+}
+
+.money{
+    padding:5px;
+}
+
+.amount input{
+    width:50%;
+    font-size: 18px;
+}
+
+.tip-container input{
+    width:100%;
+}
+
+.tip-container{
+    display:flex;
+    margin-bottom:2em;
+}
+
+#percent{
+    margin-right:10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+}
+
+#percent::-webkit-slider-runnable-track{
+    background-color: #646536;
+    border-radius:8px;
+    height:12px;
+    border:none;
+}
+
+#percent::-webkit-slider-thumb{
+    -webkit-appearance: none;
+        appearance: none;
+        margin-top: -7.5px;
+        background-color: #BFCC94;
+        height: 26px;
+        width: 26px;
+        border-radius:15px;
+    }
+
+
+.desc{
+    margin-right:4px;
+}
+
+
+.tip-amt{
+    padding:4px;
+}
+.total-amt{
+    padding:4px;
+}
+
+.results-title{
+    font-size:24px;
+    text-decoration: underline;
+    margin-bottom:10px;
+}
+
+#clear-btn{
+    margin-top:10px;
+    width:80px;
+    height:24px;
+    cursor:pointer;
+    background-color:#646536;
+    border:none;
+    border-radius:8px;
+    color:white;
+}
+
+#clear-btn:hover{
+    color:#646536;
+    background-color:white;
+    border:solid black 1px;
+    transition:0.2s;
+}
+
+
+#tip-value, #bill-value{
+    color: rgb(116, 214, 116);
+    font-weight:bold;
+}
